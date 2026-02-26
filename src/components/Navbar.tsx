@@ -51,7 +51,7 @@ export function Navbar() {
           {/* Logo */}
           <a href="#home" className="flex-shrink-0" aria-label="Soluna Yoga Home">
             <img
-              src="/images/logo.png"
+              src={`${import.meta.env.BASE_URL}images/logo.png`}
               alt="Soluna Yoga Logo"
               className={`h-14 w-auto md:h-16 transition-all duration-300 ${
                 isScrolled ? '' : 'brightness-0 invert'

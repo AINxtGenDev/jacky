@@ -8,7 +8,7 @@ export function Footer() {
           {/* Brand */}
           <div className="sm:col-span-2 lg:col-span-1">
             <img
-              src="/images/logo.png"
+              src={`${import.meta.env.BASE_URL}images/logo.png`}
               alt="Soluna Yoga Logo"
               className="h-10 w-auto brightness-0 invert"
               loading="lazy"

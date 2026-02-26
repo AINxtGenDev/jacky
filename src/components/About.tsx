@@ -66,7 +66,7 @@ export function About() {
         <div className="mt-16 grid gap-8 md:grid-cols-2 md:items-center">
           <div className="overflow-hidden rounded-2xl">
             <img
-              src="/images/yoga-lake.jpg"
+              src={`${import.meta.env.BASE_URL}images/yoga-lake.jpg`}
               alt="Jacky bei Yoga am See"
               className="h-full w-full object-cover"
               loading="lazy"
@@ -80,7 +80,7 @@ export function About() {
             </p>
             <div className="mt-8 flex items-center gap-4">
               <img
-                src="/images/certification.jpg"
+                src={`${import.meta.env.BASE_URL}images/certification.jpg`}
                 alt="200h Yoga Alliance Zertifizierung"
                 className="h-20 w-20 rounded-lg object-cover shadow-md"
                 loading="lazy"

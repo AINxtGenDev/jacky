@@ -20,7 +20,7 @@ export function Events() {
         <div className="mt-12 overflow-hidden rounded-2xl bg-white shadow-sm md:grid md:grid-cols-2">
           <div className="overflow-hidden">
             <img
-              src="/images/staudachhof.jpg"
+              src={`${import.meta.env.BASE_URL}images/staudachhof.jpg`}
               alt="Staudachhof Retreat Location in Kärnten"
               className="h-64 w-full object-cover md:h-full"
               loading="lazy"

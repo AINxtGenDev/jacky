@@ -30,7 +30,7 @@ export function MusicVibes() {
         <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           <div className="group overflow-hidden rounded-2xl">
             <img
-              src="/images/yoga-studio.jpg"
+              src={`${import.meta.env.BASE_URL}images/yoga-studio.jpg`}
               alt="Yoga Studio mit Atmosphäre"
               className="h-64 w-full object-cover transition-transform duration-500 group-hover:scale-105 sm:h-72"
               loading="lazy"
@@ -38,7 +38,7 @@ export function MusicVibes() {
           </div>
           <div className="group overflow-hidden rounded-2xl">
             <img
-              src="/images/yoga-meditation.jpg"
+              src={`${import.meta.env.BASE_URL}images/yoga-meditation.jpg`}
               alt="Meditationsraum"
               className="h-64 w-full object-cover transition-transform duration-500 group-hover:scale-105 sm:h-72"
               loading="lazy"
@@ -46,7 +46,7 @@ export function MusicVibes() {
           </div>
           <div className="group overflow-hidden rounded-2xl sm:col-span-2 lg:col-span-1">
             <img
-              src="/images/yoga-instructor.jpg"
+              src={`${import.meta.env.BASE_URL}images/yoga-instructor.jpg`}
               alt="Jacky bei einer Yoga Session"
               className="h-64 w-full object-cover transition-transform duration-500 group-hover:scale-105 sm:h-72"
               loading="lazy"
