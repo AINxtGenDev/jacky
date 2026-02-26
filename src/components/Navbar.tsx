@@ -33,6 +33,9 @@ export function Navbar() {
     setIsOpen(false);
   }
 
+  const textColor = isScrolled ? 'text-brand-dark' : 'text-white';
+  const hoverColor = isScrolled ? 'hover:text-brand-primary' : 'hover:text-brand-primary-hover';
+
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -44,13 +47,15 @@ export function Navbar() {
       aria-label="Hauptnavigation"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex h-16 items-center justify-between md:h-20">
+        <div className="flex h-20 items-center justify-between md:h-24">
           {/* Logo */}
           <a href="#home" className="flex-shrink-0" aria-label="Soluna Yoga Home">
             <img
               src="/images/logo.png"
               alt="Soluna Yoga Logo"
-              className="h-10 w-auto md:h-12"
+              className={`h-14 w-auto md:h-16 transition-all duration-300 ${
+                isScrolled ? '' : 'brightness-0 invert'
+              }`}
             />
           </a>
 
@@ -60,7 +65,7 @@ export function Navbar() {
               <a
                 key={href}
                 href={href}
-                className="inline-flex min-h-[44px] items-center text-sm font-medium text-brand-dark transition-colors hover:text-brand-primary"
+                className={`inline-flex min-h-[44px] items-center text-base font-semibold tracking-wide transition-colors ${textColor} ${hoverColor}`}
               >
                 {label}
               </a>
@@ -70,13 +75,13 @@ export function Navbar() {
           {/* Mobile Menu Button */}
           <button
             type="button"
-            className="inline-flex items-center justify-center rounded-md p-2 text-brand-dark md:hidden"
+            className={`inline-flex items-center justify-center rounded-md p-2 md:hidden transition-colors ${textColor}`}
             onClick={() => setIsOpen(!isOpen)}
             aria-expanded={isOpen}
             aria-controls="mobile-menu"
             aria-label={isOpen ? 'Menu schliessen' : 'Menu oeffnen'}
           >
-            <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
+            <svg className="h-7 w-7" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor">
               {isOpen ? (
                 <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
               ) : (
