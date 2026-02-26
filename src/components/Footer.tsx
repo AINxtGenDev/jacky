@@ -32,7 +32,7 @@ export function Footer() {
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    className="text-sm text-white/70 transition-colors hover:text-brand-primary"
+                    className="inline-flex min-h-[44px] items-center text-sm text-white/70 transition-colors hover:text-brand-primary"
                   >
                     {link.label}
                   </a>
@@ -46,12 +46,12 @@ export function Footer() {
             <h3 className="text-sm font-semibold uppercase tracking-wider text-white/50">Kontakt</h3>
             <ul className="mt-4 space-y-2">
               <li>
-                <a href="tel:+436604922409" className="text-sm text-white/70 transition-colors hover:text-brand-primary">
+                <a href="tel:+436604922409" className="inline-flex min-h-[44px] items-center text-sm text-white/70 transition-colors hover:text-brand-primary">
                   +43 660 4922409
                 </a>
               </li>
               <li>
-                <a href="mailto:jacky.kryzer@gmail.com" className="text-sm text-white/70 transition-colors hover:text-brand-primary break-all">
+                <a href="mailto:jacky.kryzer@gmail.com" className="inline-flex min-h-[44px] items-center text-sm text-white/70 transition-colors hover:text-brand-primary break-all">
                   jacky.kryzer@gmail.com
                 </a>
               </li>
@@ -60,7 +60,7 @@ export function Footer() {
                   href="https://www.instagram.com/jacquelinekryzer/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-white/70 transition-colors hover:text-brand-primary"
+                  className="inline-flex min-h-[44px] items-center text-sm text-white/70 transition-colors hover:text-brand-primary"
                 >
                   Instagram
                 </a>
@@ -73,17 +73,17 @@ export function Footer() {
             <h3 className="text-sm font-semibold uppercase tracking-wider text-white/50">Rechtliches</h3>
             <ul className="mt-4 space-y-2">
               <li>
-                <a href="/impressum" className="text-sm text-white/70 transition-colors hover:text-brand-primary">
+                <a href="/impressum" className="inline-flex min-h-[44px] items-center text-sm text-white/70 transition-colors hover:text-brand-primary">
                   Impressum
                 </a>
               </li>
               <li>
-                <a href="/datenschutz" className="text-sm text-white/70 transition-colors hover:text-brand-primary">
+                <a href="/datenschutz" className="inline-flex min-h-[44px] items-center text-sm text-white/70 transition-colors hover:text-brand-primary">
                   Datenschutzerklärung
                 </a>
               </li>
               <li>
-                <a href="/agbs" className="text-sm text-white/70 transition-colors hover:text-brand-primary">
+                <a href="/agbs" className="inline-flex min-h-[44px] items-center text-sm text-white/70 transition-colors hover:text-brand-primary">
                   AGBs
                 </a>
               </li>

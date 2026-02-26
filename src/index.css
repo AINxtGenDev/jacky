@@ -27,6 +27,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Touch target minimum size */
+@media (pointer: coarse) {
+  a, button, input, textarea, select {
+    min-height: 44px;
+  }
+}
+
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
   html {

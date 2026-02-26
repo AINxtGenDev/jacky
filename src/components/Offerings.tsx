@@ -56,7 +56,7 @@ export function Offerings() {
                 </p>
                 <a
                   href="#contact"
-                  className="mt-6 inline-flex items-center gap-2 font-medium text-brand-primary transition-colors hover:text-brand-dark"
+                  className="mt-6 inline-flex min-h-[44px] items-center gap-2 font-medium text-brand-primary transition-colors hover:text-brand-dark"
                 >
                   Jetzt anfragen
                   <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor">

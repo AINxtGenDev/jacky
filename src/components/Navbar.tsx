@@ -60,7 +60,7 @@ export function Navbar() {
               <a
                 key={href}
                 href={href}
-                className="text-sm font-medium text-brand-dark transition-colors hover:text-brand-primary"
+                className="inline-flex min-h-[44px] items-center text-sm font-medium text-brand-dark transition-colors hover:text-brand-primary"
               >
                 {label}
               </a>
